@@ -5,14 +5,17 @@ while True:
     print("Your menu is:-")
     print("Pizza:50\nPasta:60\nMaggi:70\nCoffee:80\nBrownie:90")
     b=input("Select your item or enter quit for exit: ").title()
-    c=int(input("Enter quantity of selected item: "))
-    if(b in a):
-        total+=a[b]*c
-        print("Your item is added to your order")
-        d=input("You want to add another item (Yes/No): ").title()
-        if(d=='Yes'):
-            continue
-        else:
-            break
+    if(b=='Quit'):
+        break
+    else:
+        c=int(input("Enter quantity of selected item: "))
+        if(b in a):
+            total+=a[b]*c
+            print("Your item is added to your order")
+            d=input("You want to add another item (Yes/No): ").title()
+            if(d=='Yes'):
+                continue
+            else:
+                break
 print("Thank you for your order")
 print("Your total amount is: ",total)
