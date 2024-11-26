@@ -17,5 +17,7 @@ while True:
                 continue
             else:
                 break
+tax=total*0.18
 print("Thank you for your order")
-print("Your total amount is: ",total)
+print("Tax:-Rs",tax)
+print("Your total amount is: Rs",total*1.18)
