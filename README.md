@@ -13,4 +13,4 @@ TECHNICAL SKILLS: **Python Programming:** Proficiency in Python for writing the 
 
 RESULT: The result of this project is a functional Python-based Cafe Management System that improves the efficiency of managing a cafe and It reduces the time spent waiting in line.
 
-Link: https://github.com/Tanya030598/Cafe-Management-System
+Link: https://github.com/Tanya030598/Cafe-Management-System/blob/main/Cafe-Management.python
