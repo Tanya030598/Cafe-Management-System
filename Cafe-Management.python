@@ -1,23 +1,22 @@
-a={'Pizza':50,'Pasta':60,'Maggi':70,'Coffee':80,'Brownie':90}
+a={'Pizza':40,'Pasta':50,'Maggi':60,'Coffee':70,'Macaroni':80,'Brownie':90,'Tea':100}
 total=0
-print("Welcome to our restaurant")
+z=[]
+print("Welcome to Tanya's Restaurant")
 while True:
-    print("Your menu is:-")
-    print("Pizza:50\nPasta:60\nMaggi:70\nCoffee:80\nBrownie:90")
-    b=input("Select your item or enter quit for exit: ").title()
-    if(b=='Quit'):
-        break
-    else:
+    print(f'Your Menu is: \nPizza:40\nPasta:50\nMaggi:60\nCoffee:70\nMacaroni:80\nBrownie:90\nTea:100')
+    b=input("Enter your item: ").title()
+    if(b in a):
         c=int(input("Enter quantity of selected item: "))
-        if(b in a):
-            total+=a[b]*c
-            print("Your item is added to your order")
-            d=input("You want to add another item (Yes/No): ").title()
-            if(d=='Yes'):
-                continue
-            else:
-                break
-tax=total*0.18
-print("Thank you for your order")
-print("Tax:-Rs",tax)
-print("Your total amount is: Rs",total*1.18)
+        total+=c*a[b]
+        z.append([b,c,a[b]*c])
+        d=input("You want to add another item:-Type-(Yes/No): ").title()
+        if(d=='Yes'):
+            continue
+        else:
+            break
+        print("Thank you")
+tax=0.18*total  
+print("Your Order is: (Item: Quantity: Amount)")
+print(z)
+print("Tax: Rs",tax)
+print("Your Total Amount is: ",total+tax)
